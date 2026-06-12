@@ -209,7 +209,7 @@ let quizScore = 0;
 
 function getEligibilityColor(score) {
   if (score >= 70) return "var(--success)";
-  if (score >= 45) return "var(--warning)";
+  if (score >= 45) return "var(--primary-blue)";
   return "var(--error)";
 }
 
@@ -758,7 +758,7 @@ const softAuroraCanvas = document.querySelector(".soft-aurora-canvas");
 if (softAuroraCanvas) {
   const helpSection = softAuroraCanvas.closest(".help");
   const ctx = softAuroraCanvas.getContext("2d", { alpha: true });
-  const colors = ["#292075", "#280071", "#00a9e0", "#12a8e0", "#ffd100"];
+  const colors = ["#292075", "#280071", "#00a9e0", "#12a8e0", "#caeef8"];
   const mouse = { x: 0.5, y: 0.5 };
   const easedMouse = { x: 0.5, y: 0.5 };
   let width = 0;
